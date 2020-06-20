@@ -5,16 +5,27 @@ module.exports = {
     node: true,
   },
   parserOptions: {
-    parser: 'babel-eslint',
+    parser: "babel-eslint",
   },
   extends: [
-    '@nuxtjs',
-    'prettier',
-    'prettier/vue',
-    'plugin:prettier/recommended',
-    'plugin:nuxt/recommended',
+    "@nuxtjs",
+    "prettier",
+    "prettier/vue",
+    "plugin:prettier/recommended",
+    "plugin:nuxt/recommended",
+    "eslint:recommended",
   ],
-  plugins: ['prettier'],
+  plugins: ["vue", "prettier"],
   // add your custom rules here
-  rules: {},
-}
+  rules: {
+    "vue/html-self-closing": [
+      "error",
+      {
+        html: {
+          void: "always",
+        },
+      },
+    ],
+    "vue/max-attributes-per-line": "off",
+  },
+};
