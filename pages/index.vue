@@ -18,51 +18,50 @@
         <h3 class="h3">
           Vuesax
         </h3>
-        <a
-          href="https://vuesax.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://discordapp.com/invite/9dsKtvB"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          Discord
-        </a>
-        <a
-          href="https://github.com/lusaxweb/vuesax"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+        <div class="buttons-wrapper">
+          <vs-button
+            onclick="window.open('https://vuesax.com/','_blank')"
+            color="success"
+            type="filled"
+          >
+            Documentation
+          </vs-button>
+          <vs-button
+            onclick="window.open('https://discordapp.com/invite/9dsKtvB','_blank')"
+            color="success"
+            type="filled"
+          >
+            Discord
+          </vs-button>
+          <vs-button
+            onclick="window.open('https://github.com/lusaxweb/vuesax','_blank')"
+            color="success"
+            type="filled"
+          >
+            GitHub
+          </vs-button>
+        </div>
       </div>
       <div class="links">
         <h3 class="h3">
           Nuxt.js
         </h3>
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+        <div class="buttons-wrapper">
+          <vs-button
+            onclick="window.open('https://nuxtjs.org/','_blank')"
+            color="success"
+            type="filled"
+          >
+            Documentation
+          </vs-button>
+          <vs-button
+            onclick="window.open('https://github.com/nuxt/nuxt.js','_blank')"
+            color="success"
+            type="filled"
+          >
+            GitHub
+          </vs-button>
+        </div>
       </div>
     </div>
   </div>
@@ -139,5 +138,10 @@ export default {
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   margin: 10px;
+}
+
+.buttons-wrapper {
+  display: flex;
+  justify-content: center;
 }
 </style>
