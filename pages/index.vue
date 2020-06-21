@@ -76,6 +76,39 @@ export default {
     Logo,
     VuesaxLogo,
   },
+  head() {
+    return {
+      title: "OGP TAG TEST",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "Here's meta description",
+        },
+        { hid: "og:type", property: "og:type", content: "article" },
+        {
+          hid: "og:title",
+          property: "og:title",
+          content: "TOP | OGP TAG TEST",
+        },
+        {
+          hid: "og:description",
+          property: "og:description",
+          content: "Here's meta description.",
+        },
+        {
+          hid: "og:url",
+          property: "og:url",
+          content: "http://www.example.com",
+        },
+        {
+          hid: "og:image",
+          property: "og:image",
+          content: "http://www.example.com/ogp_dummy.png",
+        },
+      ],
+    };
+  },
 };
 </script>
 
