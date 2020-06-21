@@ -99,12 +99,12 @@ export default {
         {
           hid: "og:url",
           property: "og:url",
-          content: "http://www.example.com",
+          content: "https://nuxt2-13-0-seo-ssr.vercel.app/",
         },
         {
           hid: "og:image",
           property: "og:image",
-          content: "http://www.example.com/ogp_dummy.png",
+          content: "https://nuxt2-13-0-seo-ssr.vercel.app/ogp_dummy.png",
         },
       ],
     };
